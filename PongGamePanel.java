@@ -114,7 +114,7 @@ public class PongGamePanel extends JPanel implements Runnable{
 			ball.setY(ball.y_velocity);
 		}
 		
-		// Lines 117 to 131 checks if the paddles are hitting the top and bottom walls
+		// Checks if the paddles are hitting the top and bottom walls
 		if (paddle1.y <= 0) {
 			paddle1.y = 0;
 		}
@@ -131,7 +131,7 @@ public class PongGamePanel extends JPanel implements Runnable{
 			paddle2.y = GAME_HEIGHT - PADDLE_HEIGHT;
 		}
 		
-		// Lines 134 to 144 awards points to either player, depending on which wall the ball crosses. 
+		// Awards points to either player, depending on which wall the ball crosses. 
 		// After ball crosses the left or right wall, new paddles and ball are created, and score is updated.
 		if(ball.x <= 0) {
 			score.player2++;
